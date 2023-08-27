@@ -1,0 +1,39 @@
+baseURL = 'https://7ekkno.com/'
+languageCode = 'en-us'
+title = '7ekkno - DevOps & SRE'
+theme = 'hugo-sustain'
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "img/tekkno.png"
+  author = "Tyler"
+  description = "7ekkno - DevOps & SRE"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "tekkno89"
+  Email         = "tyler@7ekkno.com"
+  LinkedIn      = "tknotek"
+  RSS           = "/blog/index.xml"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "https://github.com/tekkno89"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "https://linkedin.com/in/tknotek"
